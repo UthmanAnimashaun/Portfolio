@@ -7,4 +7,4 @@ Disallow: /footer.html
 Disallow: /meta.html
 
 # Link to your sitemap (ensure the URL is exactly correct)
-Sitemap: https://hassanahtravels.netlify.app/sitemap.xml
+Sitemap: https://axiondesign.netlify.app/sitemap.xml
