@@ -1,0 +1,29 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gold-text {
+    color: #C5A059;
+}
+.hover-to-gold-text:hover{
+    color: #C5A059;
+}
+
+
+.gold-bg {
+    background-color: #C5A059;
+}
+
+.gold-border {
+    border-color: #C5A059;
+}

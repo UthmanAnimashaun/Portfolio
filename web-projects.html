@@ -36,33 +36,8 @@
         rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        h1,
-        h2,
-        h3 {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .gold-text {
-            color: #C5A059;
-        }
-
-        .gold-bg {
-            background-color: #C5A059;
-        }
-
-        .gold-border {
-            border-color: #C5A059;
-        }
-    </style>
 
     <script type="application/ld+json">
     {
@@ -91,8 +66,7 @@
     <script src="tailwind.js"></script>
 </head>
 
-<body class="">
-
+<body class="bg-[#0B0E14] text-white">
     <!-- header content here -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
@@ -102,15 +76,17 @@
                 </div>
             </a>
 
-            <nav class="hidden md:flex space-x-8">
-                <a href="#services" class="text-gray-900 transition-colors">Expertise</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-widest uppercase">
+                <a href="index.html#services" class="gold-text hover:text-gray-600 transition-colors">Expertise</a>
+            
+                <a href="index.html#work" class="text-gray-600 hover-to-gold-text transition-colors">Portfolio</a>
+            
+                <a href="index.html#contact" class="gold-text hover:text-gray-600 transition-colors">Connect</a>
 
-                <a href="#work" class="text-gray-900  transition-colors">Portfolio</a>
+                <a href="fashion-projects.html" class="text-gray-600 hover-to-gold-text transition-colors">Fashion </a>
 
-                <a href="#contact" class="text-gray-900  transition-colors">Connect</a>
-
-
-            </nav>
+                <a href="web-projects.html" class="gold-text hover:text-gray-600 transition-colors">Web</a>
+            </div>
 
             <button id="mobile-menu-button" class="md:hidden gold-text focus:outline-none">
                 <svg class="w-8 h-8" id="menu-icon-open" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -128,14 +104,15 @@
 
         <div id="mobile-menu" class="hidden md:hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center bg-gray-50 border-t border-gray-200">
-                <a href="#services" class="block py-2 text-gray-900  rounded-md font-medium">Expertise</a>
+                <a href="index.html#services" class="block py-2 gold-text hover:text-gray-600 transition-colors  rounded-md font-medium">Expertise</a>
 
+                <a href="index.html#work" class="block py-2 text-gray-600 hover-to-gold-text transition-colors rounded-md font-medium">Portfolio</a>
 
+                <a href="index.html#contact" class="block py-2 gold-text hover:text-gray-600 transition-colors rounded-md font-medium">Connect</a>
 
+                <a href="fashion-projects.html" class="block py-2 text-gray-600 hover-to-gold-text transition-colors rounded-md font-medium">Fashion</a>
 
-                <a href="#work" class="block py-2 text-gray-600  rounded-md font-medium">Portfolio</a>
-
-                <a href="#contact" class="block py-2 text-gray-600 rounded-md font-medium">Connect</a>
+                <a href="web-projects.html" class="block py-2 gold-text hover:text-gray-600 transition-colors rounded-md font-medium">Web</a>
 
             </div>
         </div>
@@ -147,7 +124,7 @@
 
 
     <nav class="pt-10 px-6 max-w-7xl mx-auto">
-        <a href="index.html" class="text-gray-500 hover:gold-text text-xs font-mono uppercase tracking-[0.2em] flex items-center gap-2 transition">
+        <a href="index.html" class="text-gray-300 hover:gold-text text-xs font-mono uppercase tracking-[0.2em] flex items-center gap-2 transition">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
             Back to Home
         </a>
@@ -279,14 +256,14 @@
                     <span class="text-white">AX</span><span class="gold-text">ION</span>
                 </div>
 
-                <p class="text-[9px] text-gray-600 font-mono uppercase tracking-[0.3em] leading-relaxed">
+                <p class="text-[14px] text-gray-600 font-mono uppercase tracking-[0.3em] leading-relaxed">
                     &copy; 2026 Axion Designs. <br class="md:hidden"> Precision & Elegance.
                 </p>
 
                 <div
-                    class="flex flex-wrap justify-center gap-6 text-[10px] font-mono gold-text uppercase tracking-widest opacity-60">
-                    <a href="#services">Expertise</a>
-                    <a href="#work">Selected Works</a>
+                    class="flex flex-wrap justify-center gap-6 text-[14px] font-mono gold-text uppercase tracking-widest opacity-60">
+                    <a href="index.html#services">Expertise</a>
+                    <a href="index.html#work">Selected Works</a>
                 </div>
             </div>
         </div>
