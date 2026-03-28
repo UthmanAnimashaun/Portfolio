@@ -38,12 +38,12 @@
 <link rel="manifest" href="/site.webmanifest" />
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!---  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link href="style.css"
         rel="stylesheet">
 
-    <script  src="https://cdn.tailwindcss.com"></script>
+   <!--- <script  src="https://cdn.tailwindcss.com"></script> -->
     
 
 
@@ -76,8 +76,8 @@
 </head>
 
 <body class="bg-[#0B0E14] text-white">
-    <!-- header content here -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
+    <!--  content here -->
+    < class="bg-white shadow-md sticky top-0 z-50" role="">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
             <a href="/" aria-label="home page" class="flex items-center space-x-2">
                 <div class="text-2xl font-black tracking-tighter">
@@ -85,7 +85,7 @@
                 </div>
             </a>
 
-            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-widest uppercase">
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-widest uppercase" role="navigations">
                 <a href="index.html#services" aria-label="services" class="gold-text hover:text-gray-600 transition-colors">Expertise</a>
             
                 <a href="index.html#work" aria-label="Works" class="text-gray-600 hover-to-gold-text transition-colors">Portfolio</a>
@@ -95,7 +95,7 @@
                 <a href="fashion-projects.html" aria-label="fashion-projects" class="text-gray-600 hover-to-gold-text transition-colors">Fashion </a>
 
                 <a href="web-projects.html" aria-label="web-projects" class="gold-text hover:text-gray-600 transition-colors">Web</a>
-            </div>
+            </nav>
 
             <button id="mobile-menu-button" class="md:hidden gold-text focus:outline-none" aria-label="mobile-menu-button">
                 <svg class="w-8 h-8" id="menu-icon-open" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -111,7 +111,7 @@
             </button>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden">
+        <div id="mobile-menu" class="hidden md:hidden" role="mobile menu links">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center bg-gray-50 border-t border-gray-200">
                 <a href="index.html#services" aria-label="Services" class="block py-2 gold-text hover:text-gray-600 transition-colors  rounded-md font-medium">Expertise</a>
 
@@ -125,11 +125,12 @@
 
             </div>
         </div>
-    </header>
-    <!-- header content ends here -->
+    </>
+    <!--  content ends here -->
 
+<main role="main">
     <!----- Hero section --->
-    <section class="relative pt-10 pb-20 md:pt-10 md:pb-32 flex items-center overflow-hidden">
+    <section class="relative pt-10 pb-20 md:pt-10 md:pb-32 flex items-center overflow-hidden" role="hero">
         <div class="absolute inset-0 -z-10" style="background-color: #0B0E14;">
             <div class="absolute inset-0 opacity-20"
                 style="background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');"></div>
@@ -490,7 +491,7 @@
             <div id="testimonialDots" class="flex justify-center mt-12 gap-3"></div>
         </div>
     </section>
-
+</main>
     <script>
         (function () {
             const slider = document.getElementById("testimonialSlider");
@@ -552,12 +553,10 @@
         })();
     </script>
 
-
-
     <!---- -->
     <!---- contact / footer -->
     <footer id="contact" style="background-color: #0B0E14;"
-        class="py-20 px-6 relative overflow-hidden border-t border-white/5">
+      role="contentinfo"  class="py-20 px-6 relative overflow-hidden border-t border-white/5">
 
         <div class="absolute top-0 right-0 w-64 h-64 bg-[#C5A059] opacity-[0.05] blur-[100px] pointer-events-none">
         </div>
@@ -649,7 +648,7 @@
         x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-10"
         x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-300"
         @click="window.scrollTo({top: 0, behavior: 'smooth'})"
-        class="fixed bottom-8 right-8 z-[9999] w-12 h-12 gold-bg text-black rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform active:scale-95"
+        class="fixed bottom-8 right-8 z-[9999] w-12 h-12 gold-bg text-black rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform active:scale-95" aria-label="scroll To Top"
         style="display: none;">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path>
