@@ -1,0 +1,457 @@
+<!DOCTYPE html>  <html lang="en" class="scroll-smooth">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Laravel Bug Fix Specialist | Hire Me</title>  
+    <!-- Tailwind CSS -->  
+    <script src="https://cdn.tailwindcss.com"></script>  
+    <script src="tailwind.js"></script>    
+    <!-- Alpine.js -->  
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>  
+    <!-- Google Fonts: Inter -->  
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">  <script>  
+    tailwind.config = {  
+        theme: {  
+            extend: {  
+                fontFamily: {  
+                    sans: ['Inter', 'sans-serif'],  
+                },  
+                colors: {  
+                    laravel: '#FF2D20', // Laravel Official Red  
+                    dark: '#1a202c',  
+                }  
+            }  
+        }  
+    }  
+</script>  
+<style>  
+    [x-cloak] { display: none !important; }  
+</style>
+
+</head>  
+<body class="font-sans antialiased text-gray-800 bg-gray-50 selection:bg-laravel selection:text-white">  <!-- Navigation -->  
+<nav x-data="{ isOpen: false }" class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">  
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">  
+        <div class="flex justify-between h-16">  
+            <div class="flex items-center">  
+                <a href="#" class="flex items-center space-x-2">  
+                    <svg class="w-8 h-8 text-laravel" viewBox="0 0 24 24" fill="currentColor"><path d="M23.119 7.424L12.56.326a1.015 1.015 0 00-1.12 0L.881 7.424a1.015 1.015 0 00-.465.845v14.195c0 .356.183.688.484.856l10.56 5.89a1.015 1.015 0 00.995 0l10.56-5.89a1.015 1.015 0 00.484-.856V8.27a1.015 1.015 0 00-.465-.845zM12 2.115l8.769 5.885L12 13.885 3.231 8z"/></svg>  
+                    <span class="font-bold text-xl text-gray-900">Laravel<span class="text-laravel">Fixer</span></span>  
+                </a>  
+            </div>  
+              
+            <!-- Desktop Menu -->  
+            <div class="hidden md:flex items-center space-x-8">  
+                <a href="#services" class="text-gray-600 hover:text-laravel transition">What I Fix</a>  
+                <a href="#projects" class="text-gray-600 hover:text-laravel transition">Projects</a>  
+                <a href="#process" class="text-gray-600 hover:text-laravel transition">Process</a>  
+                <a href="#faq" class="text-gray-600 hover:text-laravel transition">FAQ</a>  
+                <a href="https://wa.me/2348128335797?text=Hello!%20I%20saw%20your%20portfolio%20and%20need%20help%20fixing%20a%20Laravel%2FLivewire%20issue.%20Are%20you%20available%20to%20discuss%3F" target="_blank" class="bg-laravel text-white px-5 py-2 rounded-lg font-medium hover:bg-red-600 transition shadow-lg shadow-laravel/30">Hire Me</a>  
+            </div>  
+
+            <!-- Mobile menu button -->  
+            <div class="flex items-center md:hidden">  
+                <button @click="isOpen = !isOpen" class="text-gray-600 hover:text-laravel focus:outline-none">  
+                    <svg class="h-6 w-6" x-show="!isOpen" fill="none" viewBox="0 0 24 24" stroke="currentColor">  
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>  
+                    </svg>  
+                    <svg class="h-6 w-6" x-show="isOpen" x-cloak fill="none" viewBox="0 0 24 24" stroke="currentColor">  
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>  
+                    </svg>  
+                </button>  
+            </div>  
+        </div>  
+    </div>  
+
+    <!-- Mobile Menu -->  
+    <div x-show="isOpen" x-transition x-cloak class="md:hidden bg-white border-t">  
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">  
+            <a href="#services" @click="isOpen = false" class="block px-3 py-2 text-gray-700 hover:text-laravel hover:bg-gray-50 rounded-md">What I Fix</a>  
+            <a href="#projects" @click="isOpen = false" class="block px-3 py-2 text-gray-700 hover:text-laravel hover:bg-gray-50 rounded-md">Projects</a>  
+            <a href="#process" @click="isOpen = false" class="block px-3 py-2 text-gray-700 hover:text-laravel hover:bg-gray-50 rounded-md">Process</a>  
+            <a href="#faq" @click="isOpen = false" class="block px-3 py-2 text-gray-700 hover:text-laravel hover:bg-gray-50 rounded-md">FAQ</a>  
+        </div>  
+    </div>  
+</nav>  
+
+<!-- Hero Section -->  
+<section class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">  
+    <div class="inline-block mb-4 px-3 py-1 bg-red-100 text-laravel font-semibold rounded-full text-sm tracking-wide">  
+        Available for freelance work  
+    </div>  
+    <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight mb-6 max-w-4xl">  
+        Laravel & Livewire <br class="hidden md:block"/> Bug Fix Specialist  
+    </h1>  
+    <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl leading-relaxed">  
+        I help businesses quickly fix Laravel, Livewire, PHP and MySQL issues—from broken checkout pages and authentication errors to database bugs, deployment issues and performance problems.  
+    </p>  
+    <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">  
+        <a href="https://wa.me/2348128335797?text=Hello!%20I%20saw%20your%20portfolio%20and%20need%20help%20fixing%20a%20Laravel%2FLivewire%20issue.%20Are%20you%20available%20to%20discuss%3F" target="_blank" class="flex items-center justify-center bg-green-600 text-white px-8 py-3.5 rounded-lg font-bold text-lg hover:bg-green-700 transition shadow-xl shadow-green-600/20">  
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>  
+            Hire Me on WhatsApp  
+        </a>  
+        <a href="#projects" class="flex items-center justify-center bg-white text-gray-800 border-2 border-gray-200 px-8 py-3.5 rounded-lg font-bold text-lg hover:border-gray-300 hover:bg-gray-50 transition">  
+            View Portfolio  
+        </a>  
+    </div>  
+</section>  
+
+<!-- What I Can Fix Section -->  
+<section id="services" class="py-20 bg-white">  
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">  
+        <div class="text-center mb-16">  
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-4">What I Can Fix</h2>  
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Instead of listing skills, I list the actual problems I solve for businesses every day.</p>  
+        </div>  
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">  
+            <!-- Laravel Box -->  
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition">  
+                <div class="w-12 h-12 bg-red-100 text-laravel rounded-xl flex items-center justify-center mb-6">  
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>  
+                </div>  
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Laravel</h3>  
+                <ul class="space-y-3">  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">500 Internal Server Errors</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">Route Issues</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">Authentication Problems</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">Validation Errors</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">File Upload Bugs</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">Queue & Job Issues</span></li>  
+                </ul>  
+            </div>  
+
+            <!-- Livewire Box -->  
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition">  
+                <div class="w-12 h-12 bg-pink-100 text-pink-500 rounded-xl flex items-center justify-center mb-6">  
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>  
+                </div>  
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Livewire</h3>  
+                <ul class="space-y-3">  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">Component Errors</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">Pagination Issues</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">Search & Filter Bugs</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">Form Validation</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">Events</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">Alpine.js Integration</span></li>  
+                </ul>  
+            </div>  
+
+            <!-- Database Box -->  
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition">  
+                <div class="w-12 h-12 bg-blue-100 text-blue-500 rounded-xl flex items-center justify-center mb-6">  
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>  
+                </div>  
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Database</h3>  
+                <ul class="space-y-3">  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">MySQL Errors</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">Relationship Problems</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">Slow Queries</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">Migration Issues</span></li>  
+                </ul>  
+            </div>  
+
+            <!-- Deployment Box -->  
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition">  
+                <div class="w-12 h-12 bg-purple-100 text-purple-500 rounded-xl flex items-center justify-center mb-6">  
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>  
+                </div>  
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Deployment</h3>  
+                <ul class="space-y-3">  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">Shared Hosting</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">Apache Server</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">cPanel Configurations</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">SSL Certificates</span></li>  
+                    <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-700 text-sm">Environment Config</span></li>  
+                </ul>  
+            </div>  
+        </div>  
+    </div>  
+</section>  
+
+<!-- Why Hire Me -->  
+<section class="py-20 bg-gray-50 border-t border-b border-gray-100">  
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">  
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden">  
+            <div class="md:flex">  
+                <div class="md:w-1/2 p-8 md:p-12 bg-dark text-white flex flex-col justify-center">  
+                    <h2 class="text-3xl font-extrabold mb-4">Why Hire Me?</h2>  
+                    <p class="text-gray-300 leading-relaxed">  
+                        I don't just write code; I restore business operations. When your app breaks, you need someone who focuses on solving problems, not creating new ones.  
+                    </p>  
+                </div>  
+                <div class="md:w-1/2 p-8 md:p-12">  
+                    <ul class="space-y-5">  
+                        <li class="flex items-start">  
+                            <div class="shrink-0 w-6 h-6 rounded-full bg-laravel/10 flex items-center justify-center mr-3 mt-0.5">  
+                                <svg class="w-4 h-4 text-laravel" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>  
+                            </div>  
+                            <span class="text-gray-800 font-medium">Real Laravel projects deployed online</span>  
+                        </li>  
+                        <li class="flex items-start">  
+                            <div class="shrink-0 w-6 h-6 rounded-full bg-laravel/10 flex items-center justify-center mr-3 mt-0.5">  
+                                <svg class="w-4 h-4 text-laravel" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>  
+                            </div>  
+                            <span class="text-gray-800 font-medium">Deep experience with Livewire apps</span>  
+                        </li>  
+                        <li class="flex items-start">  
+                            <div class="shrink-0 w-6 h-6 rounded-full bg-laravel/10 flex items-center justify-center mr-3 mt-0.5">  
+                                <svg class="w-4 h-4 text-laravel" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>  
+                            </div>  
+                            <span class="text-gray-800 font-medium">Clean and maintainable code</span>  
+                        </li>  
+                        <li class="flex items-start">  
+                            <div class="shrink-0 w-6 h-6 rounded-full bg-laravel/10 flex items-center justify-center mr-3 mt-0.5">  
+                                <svg class="w-4 h-4 text-laravel" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>  
+                            </div>  
+                            <span class="text-gray-800 font-medium">Fast & clear communication</span>  
+                        </li>  
+                        <li class="flex items-start">  
+                            <div class="shrink-0 w-6 h-6 rounded-full bg-laravel/10 flex items-center justify-center mr-3 mt-0.5">  
+                                <svg class="w-4 h-4 text-laravel" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>  
+                            </div>  
+                            <span class="text-gray-800 font-medium">Laser-focused on solving the exact bug</span>  
+                        </li>  
+                    </ul>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+</section>  
+
+<!-- Featured Projects -->  
+<section id="projects" class="py-20 bg-white">  
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">  
+        <div class="text-center mb-16">  
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Featured Projects</h2>  
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Applications I've built or significantly optimized.</p>  
+        </div>  
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">  
+            <!-- Project 1 -->  
+            <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition group">  
+                <div class="h-48 bg-gray-100 flex items-center justify-center border-b border-gray-100 group-hover:bg-gray-50 transition">  
+                    <span class="text-5xl">🥇</span>  
+                </div>  
+                <div class="p-6">  
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">BookBuffet</h3>  
+                    <p class="text-gray-600 mb-4">A complete platform built to streamline the management and discovery of books efficiently.</p>  
+                    <div class="flex flex-wrap gap-2">  
+                        <span class="px-2 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded">Laravel</span>  
+                        <span class="px-2 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded">MySQL</span>  
+                    </div>  
+                </div>  
+            </div>  
+
+            <!-- Project 2 -->  
+            <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition group">  
+                <div class="h-48 bg-gray-100 flex items-center justify-center border-b border-gray-100 group-hover:bg-gray-50 transition">  
+                    <span class="text-5xl">🥈</span>  
+                </div>  
+                <div class="p-6">  
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Lisaan</h3>  
+                    <p class="text-gray-600 mb-4">A dynamic language-focused application optimized for fast interactions and smooth user experience.</p>  
+                    <div class="flex flex-wrap gap-2">  
+                        <span class="px-2 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded">Laravel</span>  
+                        <span class="px-2 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded">Livewire</span>  
+                    </div>  
+                </div>  
+            </div>  
+
+            <!-- Project 3 -->  
+            <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition group">  
+                <div class="h-48 bg-gray-100 flex items-center justify-center border-b border-gray-100 group-hover:bg-gray-50 transition">  
+                    <span class="text-5xl">🥉</span>  
+                </div>  
+                <div class="p-6">  
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">E-Commerce Repair</h3>  
+                    <p class="text-gray-600 mb-4">Fixed critical checkout bottlenecks and complex relationship bugs in an existing high-traffic store.</p>  
+                    <div class="flex flex-wrap gap-2">  
+                        <span class="px-2 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded">Laravel</span>  
+                        <span class="px-2 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded">Alpine.js</span>  
+                    </div>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+</section>  
+
+<!-- My Process -->  
+<section id="process" class="py-20 bg-dark text-white">  
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">  
+        <div class="text-center mb-16">  
+            <h2 class="text-3xl font-extrabold mb-4">My Process</h2>  
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">A transparent, risk-free workflow designed to build trust.</p>  
+        </div>  
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">  
+            <div class="bg-gray-800 p-6 rounded-2xl relative">  
+                <div class="text-laravel font-black text-4xl absolute -top-4 -right-2 opacity-50">01</div>  
+                <h3 class="text-lg font-bold mb-2">Tell me the issue.</h3>  
+                <p class="text-gray-400 text-sm">Send me a message describing the bug or error you are facing.</p>  
+            </div>  
+            <div class="bg-gray-800 p-6 rounded-2xl relative">  
+                <div class="text-laravel font-black text-4xl absolute -top-4 -right-2 opacity-50">02</div>  
+                <h3 class="text-lg font-bold mb-2">I'll inspect the app.</h3>  
+                <p class="text-gray-400 text-sm">I review the logs, trace the routes, and find exactly where it breaks.</p>  
+            </div>  
+            <div class="bg-gray-800 p-6 rounded-2xl relative">  
+                <div class="text-laravel font-black text-4xl absolute -top-4 -right-2 opacity-50">03</div>  
+                <h3 class="text-lg font-bold mb-2">I'll explain the cause.</h3>  
+                <p class="text-gray-400 text-sm">No technical jargon. Just a clear explanation of what went wrong.</p>  
+            </div>  
+            <div class="bg-gray-800 p-6 rounded-2xl relative">  
+                <div class="text-laravel font-black text-4xl absolute -top-4 -right-2 opacity-50">04</div>  
+                <h3 class="text-lg font-bold mb-2">I'll fix the bug.</h3>  
+                <p class="text-gray-400 text-sm">I write the patch, fix the database query, or correct the configuration.</p>  
+            </div>  
+            <div class="bg-gray-800 p-6 rounded-2xl relative">  
+                <div class="text-laravel font-black text-4xl absolute -top-4 -right-2 opacity-50">05</div>  
+                <h3 class="text-lg font-bold mb-2">You test it.</h3>  
+                <p class="text-gray-400 text-sm">You verify on your staging or production environment that it works.</p>  
+            </div>  
+            <div class="bg-gray-800 p-6 rounded-2xl relative border border-laravel/30">  
+                <div class="text-laravel font-black text-4xl absolute -top-4 -right-2 opacity-50">06</div>  
+                <h3 class="text-lg font-bold mb-2 text-laravel">Payment.</h3>  
+                <p class="text-gray-300 text-sm font-medium">Payment made only after successful delivery & confirmation (if agreed).</p>  
+            </div>  
+        </div>  
+    </div>  
+</section>  
+
+<!-- Technologies -->  
+<section class="py-16 bg-white border-b border-gray-100">  
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">  
+        <h2 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-8">Technologies I use daily</h2>  
+        <div class="flex flex-wrap justify-center gap-3 md:gap-4">  
+            <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium text-sm hover:border-laravel transition cursor-default">Laravel</span>  
+            <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium text-sm hover:border-pink-400 transition cursor-default">Livewire</span>  
+            <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium text-sm hover:border-indigo-400 transition cursor-default">PHP</span>  
+            <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium text-sm hover:border-blue-400 transition cursor-default">MySQL</span>  
+            <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium text-sm hover:border-yellow-400 transition cursor-default">JavaScript</span>  
+            <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium text-sm hover:border-teal-400 transition cursor-default">Alpine.js</span>  
+            <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium text-sm hover:border-cyan-400 transition cursor-default">Tailwind CSS</span>  
+            <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium text-sm hover:border-orange-400 transition cursor-default">Git</span>  
+            <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium text-sm hover:border-red-400 transition cursor-default">Apache</span>  
+            <span class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-full text-gray-700 font-medium text-sm hover:border-black transition cursor-default">Linux</span>  
+        </div>  
+    </div>  
+</section>  
+
+<!-- Testimonials (Placeholder area) -->  
+<section class="py-20 bg-gray-50">  
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">  
+        <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Client Success</h2>  
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 italic text-gray-600 mb-4">  
+            "Saved our checkout process within hours. Highly recommended for Laravel emergencies."   
+        </div>  
+        <p class="text-sm text-gray-400">More verified reviews and successful project screenshots coming soon.</p>  
+    </div>  
+</section>  
+
+<!-- FAQ Section -->  
+<section id="faq" class="py-20 bg-white">  
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">  
+        <div class="text-center mb-12">  
+            <h2 class="text-3xl font-extrabold text-gray-900">Frequently Asked Questions</h2>  
+        </div>  
+
+        <!-- Alpine Accordion -->  
+        <div x-data="{ active: null }" class="space-y-4">  
+              
+            <!-- Item 1 -->  
+            <div class="border border-gray-200 rounded-xl overflow-hidden">  
+                <button @click="active = active === 1 ? null : 1" class="w-full flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition text-left">  
+                    <span class="font-semibold text-gray-900">Can you work on existing Laravel projects?</span>  
+                    <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" :class="{'rotate-180': active === 1}" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>  
+                </button>  
+                <div x-show="active === 1" x-collapse x-cloak class="p-5 pt-0 bg-white text-gray-600 border-t border-gray-100">  
+                    Yes, absolutely. Most of my work involves jumping into existing codebases, understanding the structure, and fixing issues without breaking other parts of the application.  
+                </div>  
+            </div>  
+
+            <!-- Item 2 -->  
+            <div class="border border-gray-200 rounded-xl overflow-hidden">  
+                <button @click="active = active === 2 ? null : 2" class="w-full flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition text-left">  
+                    <span class="font-semibold text-gray-900">Can you fix Livewire bugs?</span>  
+                    <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" :class="{'rotate-180': active === 2}" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>  
+                </button>  
+                <div x-show="active === 2" x-collapse x-cloak class="p-5 pt-0 bg-white text-gray-600 border-t border-gray-100">  
+                    Yes. Whether it's component state issues, pagination failing, or Alpine.js integration problems within Livewire, I can debug and resolve it efficiently.  
+                </div>  
+            </div>  
+
+            <!-- Item 3 -->  
+            <div class="border border-gray-200 rounded-xl overflow-hidden">  
+                <button @click="active = active === 3 ? null : 3" class="w-full flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition text-left">  
+                    <span class="font-semibold text-gray-900">Do you build new Laravel applications?</span>  
+                    <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" :class="{'rotate-180': active === 3}" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>  
+                </button>  
+                <div x-show="active === 3" x-collapse x-cloak class="p-5 pt-0 bg-white text-gray-600 border-t border-gray-100">  
+                    Yes, depending on the project scope and my current availability. However, my primary focus is debugging and stabilizing existing applications. Let's discuss your requirements!  
+                </div>  
+            </div>  
+
+            <!-- Item 4 -->  
+            <div class="border border-gray-200 rounded-xl overflow-hidden">  
+                <button @click="active = active === 4 ? null : 4" class="w-full flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition text-left">  
+                    <span class="font-semibold text-gray-900">How quickly can you start?</span>  
+                    <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" :class="{'rotate-180': active === 4}" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>  
+                </button>  
+                <div x-show="active === 4" x-collapse x-cloak class="p-5 pt-0 bg-white text-gray-600 border-t border-gray-100">  
+                    Usually within 24 hours. For critical bugs bringing down production environments, I can often start immediately.  
+                </div>  
+            </div>  
+
+        </div>  
+    </div>  
+</section>  
+
+<!-- Footer / Contact -->  
+<footer id="contact" class="bg-dark pt-20 pb-10 border-t border-gray-800">  
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">  
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">  
+            <div>  
+                <h2 class="text-3xl font-extrabold text-white mb-4">Let's Fix Your Bug.</h2>  
+                <p class="text-gray-400 mb-8 max-w-md">Don't let a broken route or slow query cost your business money. Reach out to me right now and let's get it resolved.</p>  
+                <div class="flex space-x-4">  
+                    <!-- WhatsApp -->  
+                    <a href="https://wa.me/2348128335797?text=Hello!%20I%20saw%20your%20portfolio%20and%20need%20help%20fixing%20a%20Laravel%2FLivewire%20issue.%20Are%20you%20available%20to%20discuss%3F" target="_blank" class="bg-[#25D366] text-white p-3 rounded-full hover:bg-green-600 transition shadow-lg shadow-green-900/50">  
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>  
+                    </a>  
+                    <!-- Email -->  
+                    <a href="mailto:animashanua@gmail.com" class="bg-gray-800 text-gray-300 p-3 rounded-full hover:bg-gray-700 hover:text-white transition">  
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>  
+                    </a>  
+                    <!-- GitHub -->  
+                    <a href="#" class="bg-gray-800 text-gray-300 p-3 rounded-full hover:bg-gray-700 hover:text-white transition">  
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>  
+                    </a>  
+                    <!-- LinkedIn -->  
+                    <a href="#" class="bg-gray-800 text-gray-300 p-3 rounded-full hover:bg-gray-700 hover:text-white transition">  
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>  
+                    </a>  
+                </div>  
+            </div>  
+              
+            <div class="flex flex-col justify-center bg-gray-800 p-8 rounded-2xl border border-gray-700">  
+                <div class="mb-4">  
+                    <span class="text-sm text-gray-400 uppercase tracking-wider font-semibold">Email Me</span>  
+                    <a href="mailto:animashanua@gmail.com" class="block text-xl font-bold text-white hover:text-laravel transition mt-1">animashanua@gmail.com</a>  
+                </div>  
+                <div>  
+                    <span class="text-sm text-gray-400 uppercase tracking-wider font-semibold">WhatsApp (Business)</span>  
+                    <a href="https://wa.me/2348128335797?text=Hello!%20I%20saw%20your%20portfolio%20and%20need%20help%20fixing%20a%20Laravel%2FLivewire%20issue.%20Are%20you%20available%20to%20discuss%3F" target="_blank" class="block text-xl font-bold text-white hover:text-[#25D366] transition mt-1">+234 812 833 5797</a>  
+                </div>  
+            </div>  
+        </div>  
+
+        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">  
+            <p>&copy; 2024. All rights reserved.</p>  
+            <p class="mt-2 md:mt-0">Focused on solving problems, not creating new ones.</p>  
+        </div>  
+    </div>  
+</footer>
+
+</body>  
+</html> 
